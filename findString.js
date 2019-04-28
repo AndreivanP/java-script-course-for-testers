@@ -3,7 +3,7 @@ function countString(stringToLocate, stringToSearch) {
     for (let i = 0; i < stringToSearch.length; i++) {
         let newString = stringToSearch.substring(i);
         if (newString.includes(stringToLocate) == true) {
-            stringToSearch = newString.replace(stringToLocate, " ");
+            stringToSearch = newString.replace(stringToLocate, "");
             count++;
         }
     }
